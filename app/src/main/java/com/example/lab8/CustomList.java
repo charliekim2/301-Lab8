@@ -54,6 +54,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City city){
+        for(int i = 0; i < this.getCount(); i++){
+            if(this.cities.get(i) == city){
+                return true;
+            }
+        }
         return false;
     }
 
